@@ -6,10 +6,10 @@
     <title>Bootstrap test</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  
   </head>
   <body>
    
-  
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -103,8 +103,12 @@
 
 
   <div class="h1 text-center text-primary my-5">Pavadinimas 2</div>  
+  
+  <div class="text-center">
 
-  <div class="accordion" id="accordionExample">
+  <button id="change-theme-btn">Pakeisti Accodion stilių</button>
+</div>
+  <div  data-bs-theme="light" class="accordion" id="accordionExample">
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingOne">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -250,7 +254,42 @@
 
 
       </footer>
-    
+      <!-- <button id="change-theme-btn">Change Theme</button>
+
+      <script>
+          let button = document.getElementById("change-theme-btn");
+          button.addEventListener("click", function(){
+              let accordions = document.getElementsByClassName("accordion");
+              for(let i = 0; i < accordions.length; i++) {
+                if(accordions[i].getAttribute("data-bs-theme") === "dark"){
+                      accordions[i].setAttribute("data-bs-theme", "light");
+                  } else {
+                    if(accordions[i].getAttribute("data-bs-theme") === "light"){
+                      accordions[i].setAttribute("data-bs-theme", "dark");
+                  }
+                  }
+              }
+          });
+      </script> -->
+
+
+<script>
+  let button = document.getElementById("change-theme-btn");
+  button.addEventListener("click", function(){
+      let divs = document.getElementsByTagName("div");
+      for(let i = 0; i < divs.length; i++) {
+        if(divs[i].getAttribute("data-bs-theme") === "dark"){
+              divs[i].setAttribute("data-bs-theme", "light");
+          } else {
+            if(divs[i].getAttribute("data-bs-theme") === "light"){
+              divs[i].setAttribute("data-bs-theme", "dark");
+          }
+          }
+      }
+  });
+</script>
+
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>

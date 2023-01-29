@@ -18,3 +18,18 @@ body .custom-container:nth-child(2) .row:nth-child(2),
 body .custom-container:nth-child(2) .row:nth-child(3){
     height: 33%;
 }
+
+.ltu {
+
+    width: 600px;
+    height: 400px;
+    margin-top: 5px;
+}
+
+.ltu:nth-child(1) .row:nth-child(1)w{
+    background-color: red;
+}
+
+.trystrys {
+    height: 33%;
+}

@@ -51,15 +51,19 @@
    
 
     <div class="container-xxl mt-3">
-      <a href="#" class="link-primary small">Home</a> > <a href="#" class="link-secondary small text-decoration-none">Library</a>
-
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
 <div class="h1 text-center text-primary my-5">Pavadinimas</div>  
 
 
   <div class="row">
     <div class="col-md my-3">
 
-      <div class="card" style="width: 100%;">
+      <div class="card" >
         <img src="https://t4.ftcdn.net/jpg/00/68/33/03/360_F_68330331_dKqChy33w0TcNHJEkqT5iw97QOX8la7F.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -106,7 +110,7 @@
   
   <div class="text-center">
 
-  <button id="change-theme-btn">Pakeisti Accodion stilių</button>
+  <button class="btn btn-primary mb-3" id="change-theme-btn">Pakeisti Accodion stilių</button>
 </div>
   <div  data-bs-theme="light" class="accordion" id="accordionExample">
     <div class="accordion-item">
@@ -186,12 +190,12 @@
 
 
     </div>
-    <footer class="bg-dark mt-5 py-2">
+    <footer class="container-flush bg-dark mt-5 py-2">
      <div class="container-xxl bg-dark mt-5 text-white">
-      <div class="row small">
+      <div class="row">
         
-        <div class="col">
-          <ul class="list-group list-group-flush bg-dark ">
+        <div class="col-md my-3">
+          <ul class="list-group list-group-flush bg-dark">
             <li class="list-group-item bg-dark text-white">An item</li>
             <li class="list-group-item bg-dark text-white">A second item</li>
             <li class="list-group-item bg-dark text-white">A third item</li>
@@ -200,9 +204,10 @@
           </ul>
         </div>
 
-        <div class="col">
-          <ul class="list-group list-group-flush bg-dark ">
-            <li class="list-group-item bg-dark text-white">An item</li>
+        <div class="col-md my-3">
+    
+          <ul class="list-group list-group-flush bg-dark">
+              <li class="list-group-item bg-dark text-white">An item</li>
             <li class="list-group-item bg-dark text-white">A second item</li>
             <li class="list-group-item bg-dark text-white">A third item</li>
             <li class="list-group-item bg-dark text-white">A fourth item</li>
@@ -210,8 +215,8 @@
           </ul>
         </div>
 
-        <div class="col">
-          <ul class="list-group list-group-flush bg-dark ">
+        <div class="col-md my-3">
+          <ul class="list-group list-group-flush bg-dark">
             <li class="list-group-item bg-dark text-white">An item</li>
             <li class="list-group-item bg-dark text-white">A second item</li>
             <li class="list-group-item bg-dark text-white">A third item</li>
